@@ -1,0 +1,92 @@
+@import 'nib'
+
+body
+  color: rgba(0,0,0,0.9)
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  margin: 0
+
+a.big-option
+  color: black
+  text-decoration: none
+
+h1
+  font-size: 50px
+  font-weight: bold
+  margin-left: 20px
+
+h2
+  text-decoration: underline
+  margin-left: 50px
+
+
+header
+  display: block
+  border-bottom: 1px rgba(0,0,0,0.8) solid
+  margin-bottom: 20px
+  user-select: none
+  width: 100%
+
+label
+  display: inline-block
+  text-align: right
+  width: 200px
+  margin-left: 50px
+
+input
+  width: 400px
+
+.big-option
+  font-size: 30px
+  list-style: none
+  display: inline-block
+  margin: 50px
+  padding: 50px
+  border: 2px black solid
+  user-select: none
+  cursor: pointer
+
+  &:hover
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5)
+
+#content
+  display: block
+  width: 80%
+  margin: 0 auto
+
+#map-canvas
+  height: 500px
+  width: 700px
+  margin: 0 auto
+
+#question-section
+  margin: 50px auto
+  width: 800px
+
+form
+  border: 1px black dotted
+  border-radius: 5px 5px 0 0 
+  padding: 10px
+
+
+#breadcrumbs  
+  ul
+    li
+      display: inline-block
+      list-style: none
+      &:after
+        content: " >"
+      &:last-child
+        &:after
+          content: ""
+      a:not(.completed)
+        opacity: 0.4
+      a:visited
+        color: blue
+
+footer
+  ul
+    li
+      display: inline-block
+
+button#proximo
+  float: right
